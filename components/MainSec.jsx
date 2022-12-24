@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Carousel from "./Carousel";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useInView } from "react-intersection-observer";
+import ThreeCanvas from "./ThreeCanvas";
 
 const style = {
   position: "absolute",
@@ -102,28 +102,52 @@ function MainSec() {
       ref={ref}
     >
       <div className="text-[#FF595A] flex items-center justify-center ml-8 z-0">
-        <div>
+        {/* <ThreeCanvas></ThreeCanvas> */}
+        {/* <div
+          class="tenor-gif-embed"
+          data-postid="14681886"
+          data-share-method="host"
+          data-aspect-ratio="1"
+          data-width="100%"
+        >
+          <a href="https://tenor.com/view/fire-fireball-8bit-gif-14681886">
+            Fire Fireball Sticker
+          </a>
+          from{" "}
+          <a href="https://tenor.com/search/fire-stickers">Fire Stickers</a>
+        </div>{" "}
+        <p>
+          <a href="https://giphy.com/gifs/gYWeVOiMmbg3kzCTq5">via GIPHY</a>
+        </p> */}
+        <div className="absolute z-50">
           <motion.div animate={animation}>
             <h1
-              className="text-9xl font-bold z-50 text-white"
+              className="main-logo textfont-bold z-50 text-white"
               style={{
                 fontFamily: "valorax Regular",
                 fontWeight: "normal",
-                fontSize: "200px",
+                // fontSize: "200px"
               }}
             >
               INGENIUM
             </h1>
             <h1
-              className="text-9xl font-bold z-50 text-white text-center"
+              className="sec-logo text-9xl font-bold z-50 text-white text-center"
               style={{
                 fontFamily: "valorax Regular",
                 fontWeight: "normal",
-                fontSize: "70px",
               }}
             >
               2022-23
             </h1>
+            <motion.div className="h-[50%] p-10 mt-10">
+              <motion.h1
+                className="tagline text-white flex items-center justify-center text-center flux3 h-full"
+                animate={animation}
+              >
+                TECH IT or LEAVE IT!
+              </motion.h1>
+            </motion.div>
           </motion.div>
 
           {/* <motion.h1 className="text-5xl mb-10 z-50">2022-23</motion.h1>
@@ -141,7 +165,7 @@ function MainSec() {
             non ips
           </motion.p> */}
           <div className="mt-8">
-            <Button value="Register" ml="0"></Button>
+            <Button className="registerButton" value="Register" ml="0"></Button>
           </div>
         </div>
       </div>

@@ -12,9 +12,14 @@ module.exports = {
         ubuntu: ["Ubuntu", "sans-serif"],
         jetbrains: ["JetBrains Mono", "monospace"],
       },
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
     },
     screens: {
-      xsm:"340px",
+      xxsm: "340px",
+      xsm: "640px",
+      msm: "880px",
       sm: "1024px",
       md: "1224px",
       lg: "1280px",
@@ -22,3 +27,4 @@ module.exports = {
   },
   plugins: [],
 };
+

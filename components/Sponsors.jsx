@@ -60,25 +60,24 @@ function Sponsors() {
   return (
     <motion.Reactdiv
       id="sponsors"
-      className="z-0 flex items-center justify-center md:h-[1000px] sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
+      className="z-0 flex items-center justify-center md:h-[1000px] mb-4 lg:mb-0 sm:h-[1500px] h-[2500px] w-screen bg-[#faf3ea]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex flex-col h-screen w-screen space-y-16 w-full mt-40">
-        <div className="flex w-full lg:w-1/2 z-50 lg:m-6">
+      <div className="flex flex-col h-screen w-screen space-y-8 w-full mt-40 md:px-4">
+        <div className="flex w-full z-50">
           <h1
             style={{
               fontFamily: "valorax Regular",
               fontWeight: "normal",
-              fontSize: "100px",
             }}
-            className="text-6xl w-full lg:text-8xl lg:ml-10 text-center lg:text-left uppercase text-white font-valorax"
+            className="text-center subheadings w-screen lg:ml-10 text-center uppercase text-white font-valorax"
           >
             sponsors
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row w-full justify-center items-center lg:space-x-16 space-y-16 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row w-full justify-center items-center lg:space-x-16 space-y-16 lg:space-y-0 ml-4 md:ml-0">
           <div className="super-box w-96 h-96 z-[0] bg-[#111b53] rounded-full">
             <div className="flex flex-col justify-center items-center relative w-full h-full">
               <div className="box flex flex-col">
@@ -145,7 +144,7 @@ function Sponsors() {
               </div>
               <div className="sponsor_text">
                 <h1 className="uppercase text-center text-[#111b53]">
-                  associate sponsor <br></br> Coca Cola
+                  Media sponsor <br></br> Coca Cola
                 </h1>
               </div>
             </div>
